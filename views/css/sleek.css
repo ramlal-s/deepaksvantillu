@@ -1,0 +1,628 @@
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0px;
+        font-family: "Raleway", arial;
+        --main-color: #E19F67; 
+    }
+    
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 1170px;
+        margin: 15px auto;
+    }
+    
+    .first-section-grid {
+        width: 800px;
+        grid-area: firstSection;
+    }
+    
+    .second-section-grid {
+        width: 100%;
+        grid-area: secondSection;
+    }
+    
+    .main-grid {
+        display: grid;
+        gap: 5px;
+        grid-template-areas: 'firstSection secondSection';
+    }
+    
+    .titleSecond {
+        margin: 5px 0 15px 0;
+        color:#666674;
+    }
+    
+    @media(max-width: 1199px) and (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+    
+        .main-grid {
+            grid-template-areas: 'firstSection secondSection';
+        }
+    
+        .first-section-grid {
+            width: 670px;
+        }
+    
+    }
+    
+    @media(max-width: 991px) and (min-width:768px) {
+        .container {
+            width: 750px;
+        }
+    
+        .main-grid {
+            grid-template-areas: 'firstSection firstSection''secondSection secondSection';
+        }
+    
+        .first-section-grid {
+            width: 100%;
+        }
+    
+    }
+    
+    @media(max-width: 767px) and (min-width: 375px) {
+        .container {
+            width: auto;
+            padding: 0 6px;
+        }
+    
+        .main-grid {
+            grid-template-areas: 'firstSection firstSection''secondSection secondSection';
+        }
+    
+        .first-section-grid {
+            width: 100%;
+        }
+    
+    }
+    
+    @media(max-width: 374px) {
+        .container {
+            width: auto;
+            padding: 0;
+        }
+    
+        .main-grid {
+            grid-template-areas: 'firstSection firstSection''secondSection secondSection';
+        }
+    
+        .first-section-grid {
+            width: 100%;
+        }
+    
+    }
+    .userAndOrder {
+        --left-column-width: 100%;
+        --right-column-width: 100%;
+        --padding-sections: 7px;
+        background: white;
+        padding: 1rem;
+    }
+    
+    .g1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        grid-area: g1;
+    }
+    
+    .billing-address,
+    .shipping-address,
+    .contact-infos,
+    .method-of-payment,
+    .buy-now-and-terms {
+        background: white;
+        border-radius: 3px;
+        width: var(--left-column-width);
+        padding: var(--padding-sections);
+        border: 1px solid lightgrey;
+    }
+    
+    .shopping-basket,
+    .options {
+        background: white;
+        border-radius: 3px;
+        width: var(--right-column-width);
+        padding: var(--padding-sections);
+        border: 1px solid lightgrey;
+    }
+    
+    .billing-address {
+        grid-area: billingAddress;
+    }
+    
+    .shipping-address {
+        grid-area: shippingAddress;
+    }
+    
+    .contact-infos {
+        grid-area: contactInfos;
+    }
+    
+    .method-of-payment {
+        grid-area: methodOfPayment;
+    }
+    
+    .shopping-basket {
+        grid-area: shoppingBasket;
+        background: #E9F1F1;
+    }
+    
+    .options {
+        grid-area: options;
+    }
+    
+    .buy-now-and-terms {
+        grid-area: buyNowAndTerms;
+        width: 100%;
+    }
+    
+    .empty-div {
+        grid-area: emptyDiv;
+        width: var(--right-column-width);
+    }
+    
+    .first-section-grid {
+        display: grid;
+        gap: 15px;
+        grid-template-areas: 'g1 g1'
+            'billingAddress shoppingBasket'
+            'contactInfos options'
+            'methodOfPayment emptyDiv'
+            'buyNowAndTerms buyNowAndTerms';
+    }
+    
+    label {
+        line-height: 1.4;
+        margin: 6px;
+    }
+    
+    /******************************** Start Of G1 section ******************************************/
+    
+    .titleH1 {
+        font-weight: 300;
+        letter-spacing: .1rem;
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+    }
+    
+    .loginButton {
+        cursor: pointer;
+        font-family: raleway, arial;
+        font-weight: 500;
+        font-size: 16px;
+        background: #0b78c1;
+        border: 1px solid transparent;
+        padding: 9px 18px;
+        color: white;
+        transition-property: border-color, color, background;
+        transition-duration: 100ms;
+        border-radius: 3px;
+    }
+    
+    .loginButton:hover {
+        background: white;
+        border-color: black;
+        color: black;
+    }
+    
+    /******************************** End Of G1 section ******************************************/
+    
+    /***************** Start Of Billing-Address and Shipping-Address Contact-infos sections **********************************/
+    .shipping-address.hidden {
+        display: none;
+    }
+    
+    .form-controll-holder {
+        width: 100%;
+        display: flex;
+    }
+    
+    .form-controll-labeled-holder {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3px;
+    }
+    
+    input,
+    select {
+        font-family: raleway, arial;
+        font-weight: 500;
+        background: #e9F1F1;
+        border-width: 1px;
+        outline-color: black;
+        border-color: transparent;
+    
+    }
+    
+    label {
+        margin: 3px;
+    }
+    
+    .my-input,
+    .form-controll-holder input[type="text"],
+    .form-controll-holder input[type="tel"],
+    .form-controll-holder input[type="email"],
+    .form-controll-labeled-holder input[type="tel"],
+    .form-controll-labeled-holder input[type="email"],
+    .form-controll-labeled-holder input[type="text"],
+    .form-controll-labeled-holder input[type="password"] {
+        width: 100%;
+        font-size: 16px;
+        padding: 5px;
+        margin: 2px;
+    }
+    
+    #firstNameBilling {
+        border-width: 1px;
+        border-top-left-radius: 10px;
+    }
+    
+    #lastNameBilling {
+        border-width: 1px;
+        border-top-right-radius: 10px;
+    }
+    
+    #country {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-width: 1px;
+    }
+    
+    #shippingPhone {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-width: 1px;
+    }
+    
+    #email,
+    #phone,
+    #password,
+    #password_confirmation {
+        border-radius: 4px;
+        border-width: 1px;
+    }
+    
+    .form-controll-holder select {
+        width: 100%;
+        font-size: 16px;
+        padding: 5px;
+        margin: 2px;
+    }
+    
+    .form-controll-holder input[type="checkbox"] {
+        font-size: 16px;
+        margin: 4px 4px 3px 2px;
+        padding: 5px;
+    }
+    
+    #passwordSection {
+        margin-top: 3px;
+    }
+    
+    #passwordSection.hide {
+        display: none;
+    }
+    
+    .small-holder {
+        margin: 10px;
+        font-size: 18px;
+    }
+    
+    /***************** End Of Billing-Address and Shipping-Address Contact-infos sections **********************************/
+    
+    /******************************** Start Of Method-Of-Payment section ******************************************/
+    .form-controll-holder label {
+        margin: 0;
+    }
+    
+    .option {
+        margin: 0 0.5rem 0.6rem 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .option div {
+        display: flex;
+    }
+    
+    .option img,
+    .option div img {
+        width: 45px;
+        height: 40px;
+    }
+    
+    #creditCardNumber {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-width: 1px;
+    }
+    
+    #cvv {
+        border-bottom-left-radius: 10px;
+        border-width: 1px;
+    }
+    
+    #expYear {
+        border-bottom-right-radius: 10px;
+        border-width: 1px;
+    }
+    
+    #credit-or-debit-card-form-holder {
+        margin-top: 5px;
+    }
+    
+    #credit-or-debit-card-form-holder.hide {
+        display: none;
+    }
+    
+    #paypal {
+        margin-top: 12px;
+    }
+    
+    #creditOrDebitCard {
+        margin-top: 12px;
+    }
+    
+    label small {
+        font-size: 14px;
+    }
+    
+    /******************************** End Of Method-Of-Payment section ******************************************/
+    
+    /******************************** Start Of Shopping-basket section ******************************************/
+    .shoppingBasketTitleHolder {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .shoppingBasketTitleHolder a {
+        text-decoration: none;
+        margin: 8px 0 15px 0;
+        font-weight: 500;
+        font-size: 15px;
+        color: #666674;
+        font-family: 'Raleway', arial;
+    }
+    
+    .shoppingBasketTitleHolder a:hover {
+        text-decoration: underline;
+    }
+    
+    .item-holder {
+        display: flex;
+        justify-content: space-between;
+        margin: 7px 2px;
+    }
+    
+    .item-holder h4 {
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+        color: #464644;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .item-holder h4:hover {
+        color: #0b78c1;
+    }
+    
+    .item-holder p {
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    
+    .item-holder .price {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .basketHeader {
+        background: white;
+        border-bottom: 1px solid lightgrey;
+        margin: -7px -7px 0 -7px;
+        padding: 7px 7px 0 7px;
+        ;
+    }
+    
+    .basketFooter {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #646474;
+        margin-top: 7px;
+    }
+    
+    .basketFooter .boldy {
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    
+    .border-top {
+        border-top: 1px solid lightgrey;
+    }
+    
+    .padding-top {
+        padding-top: 7px;
+    }
+    
+    /******************************** End Of Shopping-basket section ******************************************/
+    
+    /******************************** Start Of Options section ******************************************/
+    .options h5 {
+        font-size: 15px;
+        color: #646474;
+        margin:7px 7px 11px 7px;
+    }
+    
+    .options .sec {
+        border-top: 1px solid lightgrey;
+        padding: 7px 0 7px 0;
+    }
+    
+    .options-holder {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .shp-op-holder {
+        display: flex;
+    }
+    
+    .shp-op-holder label {
+        display: flex;
+    }
+    
+    .shp-op-holder label p {
+        padding: 0;
+        margin: 0 7px;
+    }
+    
+    .shp-op-holder input[type="radio"] {
+        margin: 7px;
+    }
+    
+    .options-holder > label span {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .other-options span {
+        color: #464644;
+        font-size: 14;
+        font-weight: 400;
+        text-decoration: underline;
+        transition-property: color;
+        transition-duration: 100ms;
+        margin: 0 7px;
+        cursor: pointer;
+    }
+    .other-options span:hover {
+        color: #0b78c1;
+    }
+    
+    .voucher-input-holder {
+        margin: 7px;
+    }
+    .voucher-input-holder.hide {
+        display:none;
+    }
+    
+    .other-options button {
+        width:100%;
+        background: linear-gradient(rgb(50, 204, 82) 0px, rgb(0, 183, 30) 100%);
+        border-width: 1px;
+        border-style: solid;
+        border-color: #606060;
+        color:white;
+        padding: 5px;
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 2px;
+        transition-property: color, background;
+        transition-duration: 1500ms;
+    }
+    .other-options button:hover {
+        background:  linear-gradient(rgb(133, 204, 82) 0px, rgb(100, 183, 30) 100%);
+    }
+    
+    /******************************** End Of Options section ******************************************/
+    
+    /******************************** Start Of Buy-Now-And-Terms section ******************************************/
+    .buy-now-and-terms {
+        border-width: 2px 0 0 0;
+    }
+    
+    .buyNowButtonHolder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .buyNowButton {
+        background: linear-gradient(rgb(255, 204, 82) 0px, rgb(248, 183, 30) 100%);
+        color: black;
+        padding: 18px 107px;
+        border: 1px solid black;
+        border-radius: .3rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: Raleway, arial;
+        cursor: pointer;
+        transition-property: color, background, border-color, box-shadow;
+        transition-duration: 100ms;
+        box-shadow: 1px 1px 10px -5px transparent;
+    }
+    
+    .buyNowButton:hover {
+        background: linear-gradient(rgb(248, 183, 30) 100%, rgb(255, 204, 82) 0px);
+        border-color: #606060;
+        box-shadow: 1px -1px 20px -8px black;
+    }
+    
+    .terms-holder{
+        border:1px solid lightgrey;
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:#848494;
+        text-align: center;
+        padding:7px;
+        line-height: 1.4;
+        font-size: 14px;
+    }
+    .terms-holder p a{
+        text-decoration: underline;
+        color:#9494a4;
+        cursor: pointer;
+    }
+    
+    /******************************** End Of Buy-Now-And-Terms section ******************************************/
+    
+    @media(max-width: 991px) {
+        .empty-div {
+            display: none;
+        }
+        .buyNowButton{
+           padding: 12px 57px; 
+        }
+    }
+    
+    @media(max-width: 372px) {
+    
+        .option img,
+        .option div img {
+            width: 40px;
+            height: 35px;
+        }
+    
+        .loginButton {
+            padding: 3px 5px;
+            width: 100%;
+        }
+    
+        .g1 {
+            flex-direction: column;
+        }
+    }
+    

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Deepak Vantillu">
+    <meta name="keywords" content="Deepak Vantillu, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deepak's Vantillu</title>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/css/sleek.css" type="text/css">
+
+
+
+
+</head>
+<style type="text/css">
+</style>
+
+<body>
+    <header class="header">
+      <!-- <div class="preNav">
+        </div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="/home">
+                            <img src="/abhi.png" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="/home">Home</a></li>
+                            <li><a href="/shop">Shop</a></li> 
+                            <li><a href="">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            
+                            <li><a href="/cart"><i class="fa fa-shopping-cart" style="font-size: 30px;"></i></a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    <div class="container main-grid">
+        <section class="userAndOrder first-section-grid">
+            <div class="g1">
+                <h1 class="titleH1">Checkout</h1>
+            </div>
+            <div class="billing-address">
+                <h3 class="titleSecond">Billing Address</h3>
+                <div class="form-controll-holder">
+                    <input type="text" id="firstNameBilling" name="firstName" placeholder="First Name">
+                    <input type="text" id="lastNameBilling" name="lastName" placeholder="Last Name">
+                </div>
+                <div class="form-controll-holder">
+                    <input type="text" name="address" id="addr" placeholder="Address">
+                </div>
+                <div class="form-controll-holder">
+                    <input type="text" name="city" id="city" placeholder="City">
+                    <input type="text" name="zip" id="zip" placeholder="Zip Code">
+                    <input type="text" name="state" id="stat" placeholder="State">
+                </div>
+                <br>
+                <div class="form-controll-holder">
+                    <select id="country" name="country" onchange="decide(this);">
+                        <option value="India" selected>India</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+                <div class="small-holder" id="small-holder1" style="color: brown;"><small id="small_details"></small></div><br>
+                <div class="small-holder" id="small-holder2" style="color: brown;"><small id="small_details1">Details about <a onmouseover="museover(this)" onmouseout="museout(this)" href="/pdf/USA_Shipping_charges.pdf" download>USA-Shipping Charges</a></small></div>
+            </div>
+            <div id="shippingAddress" class="shipping-address  hidden">
+                <h3 class="titleSecond">Shipping Address</h3>
+                <div class="form-controll-holder">
+                    <input type="text" name="firstName" placeholder="First Name">
+                    <input type="text" name="lastName" placeholder="Last Name">
+                </div>
+                <div class="form-controll-holder">
+                    <input type="text" name="address" placeholder="Address">
+                </div>
+                <div class="form-controll-holder">
+                    <input type="text" name="city" placeholder="City">
+                    <input type="text" name="zip" placeholder="Zip Code">
+                    <input type="text" name="state" placeholder="State">
+                </div>
+                <div class="form-controll-holder">
+                    <select name="country1">
+                        <option value="India" selected>India</option>
+                        <option value="UK">UK</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+                <div class="form-controll-holder">
+                    <input type="tel" id="shippingPhone" name="shippingPhone" placeholder="Shipping Phone Number">
+                </div>
+            </div>
+            <div class="contact-infos">
+                <h3 class="titleSecond">Contact information</h3>
+                <div class="form-controll-labeled-holder">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address">
+                </div>
+                <div class="form-controll-labeled-holder">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                </div>
+                <div class="small-holder"><small>Giving us a telephone number will allow us to contact you in case of questions or problems. </small></div>
+                <div class="form-controll-holder">
+                </div>
+                
+            </div>
+            <div class="method-of-payment">
+                <h3 class="titleSecond">Payment Methods</h3>
+                <div class="form-controll-holder">
+                    
+                    <div class="option"><label for="upiid" style="font-weight: 900;">UPI ID: deepaknsvofficial@oksbi<br>
+                    <a style="text-decoration: none;size: 20px;" onmouseover="museover(this)" onmouseout="museout(this)" href="/pdf/OtherBankDetails_DeepakVantillu.pdf" download>Download</a> <label for="other" style="font-weight: 900;" download> the pdf for other Modes of Payment<br>
+                    
+
+                </div>
+                <div id="credit-or-debit-card-form-holder" class="hide">
+                    <div class="form-controll-holder">
+                        <input type="tel" pattern="\d*" maxlength="19" id="creditCardNumber" name="creditCardNumber" placeholder="Card Number">
+                    </div>
+                    <div class="form-controll-holder">
+                        <input type="tel" maxlength="5" id="cvv" name="cvv" placeholder="CVV">
+                        <select id="expMonth" name="expMonth">
+                            <option value="expMonth">Exp Month</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <select id="expYear" name="expYear">
+                            <option value="expYear">Exp Year</option>
+                            <option value="20">2020</option>
+                            <option value="21">2021</option>
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                            <option value="25">2025</option>
+                            <option value="26">2026</option>
+                            <option value="27">2027</option>
+                            <option value="28">2028</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            
+            <div><button class="loginButton">Order Now</button></div>
+        </section>
+        <form id="frm4" style="display: none;"></form>
+        <p style="display: none;" id="extra_charge">0</p>
+        <form id="frm7" style="display: none;"><input type="text" id="weight" style="display: none;"/></form>
+    </div>
+    <script>
+        function museover(sel){
+            sel.style.color="red";
+        }
+
+        function museout(sel){
+            sel.style.color="blue"
+        }
+    </script>
+    <script>
+        var wei = <%- JSON.stringify(weight) %>;
+        document.getElementById("weight").value = wei;
+        
+    </script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.nice-select.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/jquery.slicknav.js"></script>
+    <script src="/js/mixitup.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/newjs.js"></script>
+</body>
+</html> -->

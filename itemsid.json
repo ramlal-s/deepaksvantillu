@@ -1,0 +1,439 @@
+{
+    "0":{
+        "name": "Kotthimera Podi (Coriander Powder)",
+        "descripton":"Its a type of podi",
+        "src":[" https://drive.google.com/uc?id=1DFa8apyUl5xKp0XXGDC4ph6X95vNNyyc"],
+        "cost":{
+            "250": "150",
+            "500" : "300",
+            "1000" : "580"
+        },
+        "type": "powder"
+    },
+
+    "1":{
+        "name": "Thellagadda Karam Podi (Garlic Mirchi Powder)",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=1Gya4kISCzkP8yDgusNfwxi9MIE-1BC_P"],
+        "cost":{
+            "250": "150",
+            "500" : "300",
+            "1000" : "580"
+        },
+        "type": "powder"
+    },
+
+    "2":{
+        "name": "Karivepaku Podi (Curry Leaf Powder) ",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=1Gya4kISCzkP8yDgusNfwxi9MIE-1BC_P"],
+        "cost":{
+            "250": "125",
+            "500" : "250",
+            "1000" : "490"
+        },
+        "type": "powder"
+    },
+
+     "3":{
+        "name": "Nuvvula Podi (Sesame Powder)",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=17IuKFmAWypAlDChzt5ZMZii5oXUNqMuY"],
+        "cost":{
+            "250": "125",
+            "500" : "250",
+            "1000" : "490"
+        },
+        "type": "powder"
+    },
+
+    "4":{
+        "name": "Kandi Podi (Pulses Powder)",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=1IuSgX6Av9-AFFce4BcZmOdyi9TwYxBMO"],
+        "cost":{
+            "250": "90",
+            "500" : "175",
+            "1000" : "350"
+        },
+        "type": "powder"
+    },
+
+    "5":{
+        "name": "Palli Podi (Groundnut Powder)",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=1i34u1qOHmLfJidC9qrfeqGc3gWMugnz-"],
+        "cost":{
+            "250": "90",
+            "500" : "175",
+            "1000" : "350"
+        },
+        "type": "powder"
+    },
+
+    "6":{
+        "name": "Chaaru Podi (Rasam Powder)",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=1Ok0umSHUnpY1GyVbSPA4oJ9Zp0sHJQYN"],
+        "cost":{
+            "250": "90",
+            "500" : "175",
+            "1000" : "350"
+        },
+        "type": "powder"
+    },
+
+    "7":{
+        "name": "Chutney Podi (Sweet Chutney Powder)",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=1i34u1qOHmLfJidC9qrfeqGc3gWMugnz-"],
+        "cost":{
+            "250": "80",
+            "500" : "150",
+            "1000" : "300"
+        },
+        "type": "powder"
+    },
+
+
+    "8":{
+        "name": "Kobbari Podi (Dry Coconut Powder)",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=1fPb0DyAmUySURhCQT0zr5UD-9wyO9IOP"],
+        "cost":{
+            "250": "80",
+            "500" : "150",
+            "1000" : "300"
+        },
+        "type": "powder"
+    },
+
+     "9":{
+        "name": "Sambar Podi (Sambar Powder)",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=1jkLgCR0jkU8s_oPi37zMx_j8n33RTV8w"],
+        "cost":{
+            "250": "80",
+            "500" : "150",
+            "1000" : "300"
+        },
+        "type": "powder"
+    },
+
+     "10":{
+        "name": "Koora Podi (Stuffed Curry Powder)",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=1IPMIhBg691_5RgjLQuzr_oNw9cGeBIVg"],
+        "cost":{
+            "250": "80",
+            "500" : "150",
+            "1000" : "300"
+        },
+        "type": "powder"
+    },
+    "11":{
+        "name": "Senagala podi (Dry Channa Garlic Powder )",
+        "descripton":"Its a type of podi",
+        "src":["https://drive.google.com/uc?id=1d6DzZAu9dd385rDchB0WMboJUQuIGE1U"],
+        "cost":{
+            "250": "60",
+            "500" : "120",
+            "1000" : "230"
+        },
+        "type": "powder"
+    },
+
+    "12":{
+        "name": "Maagaya Pachadi(Dry Mango)",
+        "descripton":"Its a pickle",
+        "src":["https://drive.google.com/uc?id=1tprbni4Bec_6X07LNK3eT9g-L8dLTcKT"],
+        "cost":{
+            "250": "210",
+            "500" : "410",
+            "1000" : "800"
+        },
+        "type": "pickles"
+    },
+    "13":{
+        "name": "Avakaya Pachadi (Mango)",
+        "descripton":"Its a pickle",
+        "src":["https://drive.google.com/uc?id=17HWqBeM2UNolYw_yEXonUOjn7FD00lyF"],
+        "cost":{
+            "250": "180",
+            "500" : "360",
+            "1000" : "700"
+        },
+        "type": "pickles"
+    },
+    "14":{
+        "name": "Mamidi Thurumu (Cut Mango)",
+        "descripton":"Its a Pickle",
+        "src":["https://drive.google.com/uc?id=1eYsVvJCNb2BMtSUVAERHY4e0NubJwNKC"],
+        "cost":{
+            "250": "150",
+            "500" : "275",
+            "1000" : "500"
+        },
+        "type": "pickles"
+    },
+
+    "15":{
+        "name": "Pandla Gongura Pachadi",
+        "descripton":"Its a Pickle",
+        "src":["https://drive.google.com/uc?id=1YIywWaRzszY4pVOXRVElARPRI0hvA2hB"],
+        "cost":{
+            "250": "130",
+            "500" : "250",
+            "1000" : "480"
+        },
+        "type": "pickles"
+    },
+
+    "16":{
+        "name": "Mamidi Allam Pachadi (Mango  Ginger)",
+        "descripton":"Its a Pickle",
+        "src":["https://drive.google.com/uc?id=1wRRK4ssGM7J0tY_oYtGfEFmlMj2arLGK"],
+        "cost":{
+            "250": "130",
+            "500" : "250",
+            "1000" : "480"
+        },
+        "type": "pickles"
+    },
+
+    "17":{
+        "name": "Pandu Mirapakaya Pachadi (Fresh Mirchi)",
+        "descripton":"Its a Pickle",
+        "src":["https://drive.google.com/uc?id=1z_Lo4y6DwfDaZFCqHk1FmzJ9to9hXimC"],
+        "cost":{
+            "250": "130",
+            "500" : "250",
+            "1000" : "480"
+        },
+        "type": "pickles"
+    },
+
+    "18":{
+        "name": "Allam Pachadi (Ginger)",
+        "descripton":"Its a Pickle",
+        "src":["https://drive.google.com/uc?id=1QFADsjYX2sin6I9nkPsEUh85EUsdMfco"],
+        "cost":{
+            "250": "120",
+            "500" : "240",
+            "1000" : "460"
+        },
+        "type": "pickles"
+    },
+
+    "19":{
+        "name": "Minumula Chinthapandu Pachadi",
+        "descripton":"Its a Pickle",
+        "src":["https://drive.google.com/uc?id=1Yf6ktPXWJpGlzZgbwhSEaRzSxf6opdmJ"],
+        "cost":{
+            "250": "120",
+            "500" : "240",
+            "1000" : "460"
+        },
+        "type":"pickles"
+    },
+
+    "20":{
+        "name": "Chinthakaya Pachadi(Raw Tamarind)",
+        "descripton":"Its a Pickle",
+        "src":["https://drive.google.com/uc?id=1QKU3NeqN4A8ZpyNCtdL2ji4k6MdJu-Ql"],
+        "cost":{
+            "250": "90",
+            "500" : "180",
+            "1000" : "350"
+        },
+        "type": "pickles"
+    },
+
+    "21":{
+        "name": "Nimmakaya Pachadi (Lime)",
+        "descripton":"Its a Pickle",
+        "src":["https://drive.google.com/uc?id=1l4r6Kzm_SmmqT6aYoqGA5_t0D_iI8XmL"],
+        "cost":{
+            "250": "90",
+            "500" : "180",
+            "1000" : "350"
+        },
+        "type": "pickles"
+    },
+
+    "22":{
+        "name": "Murukulu (Twisted Crunchy Bites)",
+        "descripton":"Its a snack",
+        "src":["https://drive.google.com/uc?id=16MXqh3VMqTQ3iRv4H0tRYHJPLD5nPQHw"],
+        "cost":{
+            "250": "100",
+            "500" : "175",
+            "1000" : "350"
+        },
+        "type": "snacks"
+    },
+    "23":{
+        "name": "Pappu Chekkalu (Rice dal Crackers)",
+        "descripton":"Its a snack",
+        "src":["https://drive.google.com/uc?id=1uGaur-2BQRAAYAtMABEVhTj3wmEoQ4-4"],
+        "cost":{
+            "250": "120",
+            "500" : "220",
+            "1000" : "400"
+        },
+        "type": "snacks"
+    },
+
+    "24":{
+        "name": "Saggu Biyyam vadiyalu (Sago Wadia)",
+        "descripton":"Its a snack",
+        "src":["https://drive.google.com/uc?id=15LCZKRLffe__PRVxyEzrwbZalrVp1DyO"],
+        "cost":{
+            "250": "100",
+            "500" : "200",
+            "1000" : "380"
+        },
+        "type": "snacks"
+    },
+
+    "25":{
+        "name": "Thadi Appadalu(Steam Papads)",
+        "descripton":"Its a snacks",
+        "src":["https://drive.google.com/uc?id=1qRyIkLO99FBUU9HalnhCLg2-oTDX7uN7"],
+        "cost":{
+            "250": "75",
+            "500" : "150",
+            "1000" : "300"
+        },
+        "type": "snacks"
+    },
+
+    "26":{
+        "name": " Minapa Vadiyalu (Urad dal Wadia)",
+        "descripton":"Its a snack",
+        "src":["https://drive.google.com/uc?id=1sVZ_8MsSPYqnRnmH9EZPZoRHdYWdHu3a"],
+        "cost":{
+            "250": "200",
+            "500" : "400",
+            "1000" : "780"
+        },
+        "type": "snacks"
+    },
+
+    "27":{
+        "name": "Oorina Mirapakayalu (Dry Salted Green Chillie)",
+        "descripton":"Its a Snack",
+        "src":["https://drive.google.com/uc?id=16hrr6zeASu4kjtGA-5cPqH63mmAUFg-Q"],
+        "cost":{
+            "250": "120",
+            "500" : "240",
+            "1000" : "400"
+        },
+        "type": "snacks"
+    },
+    "28":{
+        "name": " Neyyi (Ghee)",
+        "descripton":"Its a Special Item",
+        "src":["https://drive.google.com/uc?id=1TVrkyRLIBVsjFrEMle_0euOVSp1Lufuu"],
+        "cost":{
+            "250": "160",
+            "500" : "275",
+            "1000" : "600"
+        },
+        "type":"special"
+    },
+    "29":{
+        "name": "Avvu Neyyi (Cow Ghee)",
+        "descripton":"Its a Specila Item",
+        "src":["https://drive.google.com/uc?id=1e_DXj_66sWNCJX9OyjLt6zP7g_wT463e"],
+        "cost":{
+            "250": "175",
+            "500" : "340",
+            "1000" : "660"
+        },
+        "type":"special"
+    },
+    "30":{
+        "name": "Immunity Powder",
+        "descripton":"Its a Special Item",
+        "src":["https://drive.google.com/uc?id=1i34u1qOHmLfJidC9qrfeqGc3gWMugnz-"],
+        "cost":{
+            "250": "360",
+            "500" : "1000",
+            "1000" : "1200"
+        },
+        "type":"special"
+    },
+
+    "31":{
+        "name": "Verusenaga muddhalu (Groundnut Laddu)",
+        "descripton":"Its a Sweet",
+        "src":["https://drive.google.com/uc?id=1FLLBkyr_s7BfT6bERgQBjSJjwxSi45cl"],
+        "cost":{
+            "250": "90",
+            "500" : "165",
+            "1000" : "310"
+        },
+        "type":"sweet"
+    },
+
+    "32":{
+        "name": "Sunnundalu (Roasted Uraddal flour Laddu)",
+        "descripton":"Its a Sweet",
+        "src":["https://drive.google.com/uc?id=1i34u1qOHmLfJidC9qrfeqGc3gWMugnz-"],
+        "cost":{
+            "250": "150",
+            "500" : "275",
+            "1000" : "560"
+        },
+        "type":"sweet"
+    },
+
+    "33":{
+        "name": "Bellam Kajji Kaayalu (Semolina Gujiya with jaggery)",
+        "descripton":"Its a Sweet",
+        "src":["https://drive.google.com/uc?id=1i34u1qOHmLfJidC9qrfeqGc3gWMugnz-"],
+        "cost":{
+            "25": "150",
+            "50" : "275",
+            "100" : "560"
+        },
+        "type":"sweet"
+    },
+
+    "34":{
+        "name": "Chakkera Kajji Kaayalu (Semolina Gujiya With Sugar)",
+        "descripton":"Its a Sweet",
+        "src":["https://drive.google.com/uc?id=1i34u1qOHmLfJidC9qrfeqGc3gWMugnz-"],
+        "cost":{
+            "25": "150",
+            "50" : "275",
+            "100" : "560"
+        },
+        "type":"sweet"
+    },
+
+    "35":{
+        "name": "Arisalu (Rice flour and Molten jaggery Sweet)",
+        "descripton":"Its a Sweet",
+        "src":["https://drive.google.com/uc?id=1i34u1qOHmLfJidC9qrfeqGc3gWMugnz-"],
+        "cost":{
+            "25": "150",
+            "50" : "275",
+            "100" : "560"
+        },
+        "type":"sweet"
+    },
+
+    "36":{
+        "name": "Nethi Arisalu (Rice flour and Molten jaggery Sweet)",
+        "descripton":"Its a Sweet",
+        "src":["https://drive.google.com/uc?id=1i34u1qOHmLfJidC9qrfeqGc3gWMugnz-"],
+        "cost":{
+            "25": "150",
+            "50" : "275",
+            "100" : "560"
+        },
+        "type":"sweet"
+    }
+}

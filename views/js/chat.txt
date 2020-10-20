@@ -1,0 +1,69 @@
+store data where?
+addresses?
+databse create cheyali a ?
+umm
+manaki budget ani emana undha?
+haa undi
+entha
+idk srinu ki tliyali
+ok whats the limit of firebase free storage
+1000 no items daaka add cheyochu approx
+ok but what about the order requests
+do they come under items as well?yeahh
+of then at some point of time we may exhaust 1000 limityeah but we do it for few items for demo
+he can purchase for the db later and add as amny as he want
+but who is responsible for maintenance?
+emo but icreated a separte mail for that
+deepakvantillu@gmail.com
+deepak@2020
+okok
+so ipudu em chedham manam
+firebase petti
+cheptham prasthuthaniki free storage vadthunam aniokavela nachithe apudu money kondham
+haa ok
+now see once
+
+
+// var nam = <%- JSON.stringify(namee) %>;
+        // var descr = <%- JSON.stringify(desc) %>;
+        // var sr = <%- JSON.stringify(src) %>;
+        // // var cost = '<%- JSON.stringify(cost) %>';
+        // var fcost = <%- cost['250'] %>;
+        // var hcost = <%- cost['500'] %>;
+        // var kcost = <%- cost['1000'] %>;
+       
+        
+        //     document.getElementById("item_name").textContent = String(nam).toUpperCase();
+        //     document.getElementById("item_desc").textContent = descr;
+        //     document.getElementById("item_img").src = sr;
+        //     document.getElementById("product__details__priceid").innerText = hcost;
+
+        // var header = document.getElementById("quant-div");
+        // var btns = header.getElementsByClassName("quantid");
+        // for (var i = 0; i < btns.length; i++) {
+        //     btns[i].addEventListener("click", function() {
+        //     var current = document.getElementsByClassName("active-quantid");
+        //     current[0].className = current[0].className.replace(" active-quantid", "");
+        //     this.className += " active-quantid";
+        //     var val = document.getElementsByClassName(this.className)[0].innerHTML;
+        //     if (val=="250g"){
+        //         document.getElementById("product__details__priceid").innerText = fcost;
+        //         document.getElementById("stockid").textContent = "0.25 KG";
+        //     }
+        //     else if (val == "500g"){
+        //         document.getElementById("product__details__priceid").innerText = hcost;
+        //         document.getElementById("stockid").textContent = "0.50 KG";
+        //     }
+        //     else{
+        //         document.getElementById("product__details__priceid").innerText = kcost;
+        //         document.getElementById("stockid").textContent = "1.0 KG";
+        //     }
+           
+        //     });
+        // }
+
+
+         var k1 = "<div class='col-lg-3 col-md-4 col-sm-6 mix pickles'>";
+    var k2 = "<div class='featured__item'><div class='featured__item__pic set-bg' data-setbg='' alt='img'>";
+    var k3 = " <img class='featured__item__pic set-bg' src='" + pe.src[0] + "' style='overflow:hidden;background-position: center center;'><div class='featured__item_pic_overlay'><div class='featured__item__pic_text'>";
+    var k4 = "<a href='/getitem/" + snap1.key + "'>Shop Now  <i class='fa fa-long-arrow-right'></i></a></div></div></div><div class='featured__item__text'><h6><a href='#''>" + pe.name + "</a></h6></div></div></div></div>";
