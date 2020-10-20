@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-app.listen(4000,() => console.log("Listening at 4000"));
+app.listen(process.env.PORT || 4000,() => console.log("Listening at 4000"));
 const path = require('path');
 const fs = require("fs");
 const PDFDocument = require("pdfkit");
